@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/pic"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/ic_fingerprint_black_36dp"/>
+    
+    <TextView
+        android:id="@+id/note_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="请按压指纹"
+        android:textColor="#737e72"
+        android:textSize="13sp"
+        android:visibility="gone"/>
+    
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/result_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:textColor="#061205"
+        android:textSize="16sp"/>
+    
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/soter_setting_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="开启指纹识别"
+        android:textSize="18sp"
+        android:visibility="visible"/>
+    
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/check_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/soter_setting_btn"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="使用指纹识别"
+        android:textSize="18sp"
+        android:visibility="visible"/>
+</RelativeLayout>
