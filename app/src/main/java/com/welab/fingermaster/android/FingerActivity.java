@@ -3,12 +3,12 @@ package com.welab.fingermaster.android;
 import android.app.KeyguardManager;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.os.CancellationSignal;
 import android.security.keystore.KeyGenParameterSpec;
 import android.security.keystore.KeyPermanentlyInvalidatedException;
 import android.security.keystore.KeyProperties;
 import android.support.v4.hardware.fingerprint.FingerprintManagerCompat;
 import android.support.v4.hardware.fingerprint.FingerprintManagerCompat.AuthenticationCallback;
+import android.support.v4.os.CancellationSignal;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatTextView;
@@ -91,6 +91,7 @@ public class FingerActivity extends AppCompatActivity implements View.OnClickLis
         mResultTv = (AppCompatTextView) findViewById(R.id.result_tv);
         mNoteTv = (TextView) findViewById(R.id.note_tv);
         mFlashAnimation = AnimationUtils.loadAnimation(this, R.anim.anim_flash);
+
     }
 
     @Override
